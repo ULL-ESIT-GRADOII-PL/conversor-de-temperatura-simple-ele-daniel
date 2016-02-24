@@ -25,12 +25,12 @@ table {
 }
 
 th, td {
-    padding: 5px;
+    padding: 14px;
     horizontal-align: center;
-    vertical-align: top;
+    vertical-align: center;
     text-align: right;
     font-size:large;
-    /* border: 1px solid black; */
+    /*border: 1px dotted black;*/
 }     /* Don't center table cells  */
 
 .output {
@@ -49,7 +49,7 @@ input {
 
 body {
     padding: 50px;
-    background-color:#deb2a4;  /* blue */
+    background-color:#ebd2c9;  /* blue */
     font-size:large;
     font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
 }
@@ -66,5 +66,12 @@ h1 {
 
 #footerBar {
     height: 40px;
-    background:#bf3636
+    border: dashed 3px rgb(222, 151, 87);
+    background:#bf6037;
+}
+
+#headerBar {
+    height: 40px;
+    border: dashed 3px rgb(222, 151, 87);
+    background:#bf6037;
 }
