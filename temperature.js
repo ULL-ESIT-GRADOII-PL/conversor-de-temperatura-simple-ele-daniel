@@ -12,20 +12,18 @@ function calculate() {
     var type = m[3][0];
     var exp;
     if (!m[2]) {
-      exp = 0;
+      exp = "";
     }else{
-      exp = m[2];
+      exp = "e"+m[2];
     };
 
     num = parseFloat(num);
     if (type == 'c' || type == 'C') {
-      result = (num * 9/5)+32;
+      result = (num * 9/5)+32 + exp + "F";
     }
     else {
-      result = (num - 32)*5/9;
+      result = (num - 32)*5/9 + exp + "C";
     }
-    if (exp)
-      result = result + "e" + exp;
     converted.innerHTML = result;
   }
   else {
