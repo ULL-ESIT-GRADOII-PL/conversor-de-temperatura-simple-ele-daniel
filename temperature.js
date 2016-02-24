@@ -1,29 +1,31 @@
 "use strict"; // Use ECMAScript 5 strict mode in browsers that support it
 function calculate() {
   var result;
-  var original       = document.getElementById("........");
+  var original = document.getElementById("tempEntrada");
   var temp = original.value;
-  var regexp = /^([-+]?\d+(?:[\.,]\d*)?)\s*(e\d*)?\s*((f(?:a(?:h(?:r(?:e(?:n(?:h(?:e(?:i(?:t)?)?)?)?)?)?)?)?)?)|
-                                                                    (c(?:e(?:l(?:c(?:i(?:u(?:s)?)?)?)?)?)?))$/i;
+  var regexp = /^([-+]?\d+(?:[\.,]\d*)?)\s*(?:e(\d+))?\s*((f(?:a(?:h(?:r(?:e(?:n(?:h(?:e(?:i(?:t)?)?)?)?)?)?)?)?)?)|(c(?:e(?:l(?:c(?:i(?:u(?:s)?)?)?)?)?)?))$/i;
   var secondRegex = /^(?:e(\d*))$/
   var m = temp.match(regexp);
 
   if (m) {
-    var num = m[0];
-    var exp = m[1].match(secondRegex);
-    if (!exp) {
+    var num = m[1];
+    var type = m[3][0];
+    var exp;
+    if (!m[2]) {
       exp = 0;
-    }
-    var type = m[2][0];
+    }else{
+      exp = m[2];
+    };
+
     num = parseFloat(num);
     if (type == 'c' || type == 'C') {
       result = (num * 9/5)+32;
-      result = 1 + "e" + exp  //temporal para pruebas
     }
     else {
       result = (num - 32)*5/9;
-      result = 1 + "e" + exp //temporal para pruebas
     }
+    if (exp)
+      result = result + "e" + exp;
     converted.innerHTML = result;
   }
   else {
