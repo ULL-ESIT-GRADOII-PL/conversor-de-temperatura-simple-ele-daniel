@@ -3,7 +3,7 @@ function calculate() {
   var result;
   var original = document.getElementById("tempEntrada");
   var temp = original.value;
-  var regexp = /^([-+]?\d+(?:[\.,]\d*)?)\s*(?:e(\d+))?\s*((f(?:a(?:h(?:r(?:e(?:n(?:h(?:e(?:i(?:t)?)?)?)?)?)?)?)?)?)|(c(?:e(?:l(?:c(?:i(?:u(?:s)?)?)?)?)?)?))$/i;
+  var regexp = /^([-+]?\d+(?:[\.,]\d*)?)\s*(?:e(\d+))?\s*((f(?:a(?:h(?:r(?:e(?:n(?:h(?:e(?:i(?:t)?)?)?)?)?)?)?)?)?)|(c(?:e(?:l(?:s(?:i(?:u(?:s)?)?)?)?)?)?))$/i;
   var secondRegex = /^(?:e(\d*))$/
   var m = temp.match(regexp);
 
@@ -27,6 +27,6 @@ function calculate() {
     converted.innerHTML = result;
   }
   else {
-    converted.innerHTML = "ERROR! Try something like '-4.2C' or '-4.2e5f' instead.";
+    converted.innerHTML = "ERROR! Prueba con la sintaxis '-4.2C' o '-4.2e5f'.";
   }
 }
