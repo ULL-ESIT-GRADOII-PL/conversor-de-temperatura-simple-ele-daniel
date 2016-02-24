@@ -1,24 +1,44 @@
-<!DOCTYPE html>
-<html>
-  <head>
-     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-     <title>JavaScript Temperature Converter</title>
-     <link href="normalize.css" rel="stylesheet" type="text/css">
-     <link href="global.css" rel="stylesheet" type="text/css">
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <title>Conversor de temperaturas</title>
+        <link href="normalize.css" rel="stylesheet" type="text/css"/>
+        <link href="converter.css" rel="stylesheet" type="text/css"/>
 
-     <script type="text/javascript" src="temperature.js"></script>
-  </head>
-  <body>
-    <h1>Temperature Converter</h1>
-    <table>
-      <tr>
-        <th>Enter  Temperature (examples: 32F, 45C, -2.5f):</th>
-        <td><input id="original" autofocus onchange="calculate();" placeholder="32F" size="50"></td>
-      </tr>
-      <tr>
-        <th>Converted Temperature:</th>
-        <td><span class="output" id="converted"></span></td>
-      </tr>
-    </table>
-  </body>
+        <script type="text/javascript" src="temperature.js"></script>
+
+    </head>
+    <body>
+        <div class="center">
+            <h1>Conversor de temperaturas</h1>
+        </div>
+        <p>
+            Este conversor de temperaturas permite cambiar entre grados fahrenheit a celsius y inversamente.
+            Solo debe ingresar la cantidad de grados denotando la unidad al final de la entrada, tal y como haría
+            normalmente, por ejemplo: 12C, para indicar 12 grados celsius.
+        </p>
+        <p>
+            Además se puede usar notación científica si se desea convertir unidades grandes. En este caso la
+            sintáxis varía mínimamente: "12.45E-8Fahranheit" por ejemplo, también se puede optar por escribir la
+            e en minúscula.
+        </p>
+        <table>
+            <tr>
+                <th>Introduzca la temperatura</th>
+                <td>
+                    <input id="tempEntrada" autofocus placeholder="85Far" type="text" onchange="calculate();"/>
+                </td>
+                <td>
+                    <button class="btn" onclick="calculate();">Calcular</button>
+                </td>
+            </tr>
+            <tr>
+                <th class="toogle">La temperatura convertida es:</th>
+                <td>
+                    <span id="converted" class="output"></span>
+                </td>
+            </tr>
+        </table>
+    </body>
 </html>
