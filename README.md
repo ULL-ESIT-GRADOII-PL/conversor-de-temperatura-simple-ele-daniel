@@ -8,6 +8,6 @@ Se puede acceder a la práctica por medio del siguiente link
 
 - [Página web de la práctica](http://elediaz.github.io/conversor-de-temperatura-simple-ele-daniel)
 
-- [Portafolio de Daniel](http://alu0100824780.github.io/)
+- [Portafolio de Daniel](http://alu0100783230.github.io/)
 
 - [Portafolio de Eleazar](http://elediaz.github.io/public/portafolio.html)
