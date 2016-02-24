@@ -4,7 +4,7 @@
   "description": "A web page that let convert farenheits to celsius and reverse",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "xdg-open index.html"
   },
   "repository": {
     "type": "git",
