@@ -1,25 +1,26 @@
 {
-  "dependencies": {
-  },
-  "devDependencies": {
-    "chai": "*",
-    "mocha": "*"
-  },
-  "name": "temperature",
-  "description": "ETSII ULL Grado de Informatica",
+  "name": "temperature-converter",
   "version": "1.0.0",
-  "main": "temperature.js",
-  "directories": {
-    "test": "tests"
-  },
+  "description": "A web page that let convert farenheits to celsius and reverse",
+  "main": "index.js",
   "scripts": {
-    "test": "open tests/index.html # mac OS"
+    "test": "xdg-open index.html"
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@bitbucket.org/casiano/pl-grado-temperature-converter.git"
+    "url": "git+https://github.com/ULL-ESIT-GRADOII-PL/conversor-de-temperatura-simple-ele-daniel.git"
   },
-  "author": "Casiano",
-  "license": "ISC",
-  "homepage": "https://github.com/crguezl/ull-etsii-grado-pl-1213-temperature-converter/tree/gh-pages"
+  "keywords": [
+    "converter",
+    "temperature"
+  ],
+  "author": "Eleazar Díaz Delgado",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-GRADOII-PL/conversor-de-temperatura-simple-ele-daniel/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-GRADOII-PL/conversor-de-temperatura-simple-ele-daniel#readme",
+  "devDependencies": {
+    "chai": "^3.5.0"
+  }
 }

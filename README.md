@@ -2,20 +2,12 @@
 
 ## Práctica: Conversor en JavaScript de grados Celsius a Farenheit y viceversa
 
-### Que aprendemos
+> Para la asignatura de *Procesadores de Lenguaje* [link](https://campusvirtual.ull.es/1516/course/view.php?id=178)
 
-* HTML básico
-* JavaScript básico
-* Expresiones Regulares
-* Un poquito de CSS
-* Uso de Emmet (instale el plugin para su editor)
-* Uso de Mocha y Chai 
-* Uso de Gulp
+Se puede acceder a la práctica por medio del siguiente link
 
-### Despliegue en github.io
+- [Página web de la práctica](http://elediaz.github.io/conversor-de-temperatura-simple-ele-daniel)
 
-* [http://crguezl.github.io/ull-etsii-grado-pl-1213-temperature-converter/](http://crguezl.github.io/ull-etsii-grado-pl-1213-temperature-converter/)
+- [Portafolio de Daniel](http://alu0100783230.github.io/)
 
-### Ejecutar las pruebas
-
-* [http://crguezl.github.io/ull-etsii-grado-pl-1213-temperature-converter/tests/index.html](http://crguezl.github.io/ull-etsii-grado-pl-1213-temperature-converter/tests/index.html)
+- [Portafolio de Eleazar](http://elediaz.github.io/public/portafolio.html)
