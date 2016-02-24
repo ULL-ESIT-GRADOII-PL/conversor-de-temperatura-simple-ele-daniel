@@ -5,13 +5,16 @@
         <title>Conversor de temperaturas</title>
         <link href="normalize.css" rel="stylesheet" type="text/css"/>
         <link href="converter.css" rel="stylesheet" type="text/css"/>
+
+        <script type="text/javascript" src="temperature.js"></script>
+
     </head>
     <body>
         <div class="center">
             <h1>Conversor de temperaturas</h1>
         </div>
         <p>
-            Este conversor de temperaturas permite cambiar entre grados farenheit a celsius y inversamente.
+            Este conversor de temperaturas permite cambiar entre grados fahrenheit a celsius y inversamente.
             Solo debe ingresar la cantidad de grados denotando la unidad al final de entrada tal y como haría
             normalmente, por ejemplo: 12C, para indicar 12 grados celcius.
         </p>
@@ -20,10 +23,13 @@
             <tr>
                 <th>Introduzca la temperatura</th>
                 <td>
-                    <input id="tempEntrada" autofocus placeholder="85Far" type="text"/>
+                    <input id="tempEntrada" autofocus placeholder="85Far" type="text" onchange="calculate();"/>
+                </td>
+                <td>
+                    <button class="btn" onclick="calculate();">Calcular</button>
                 </td>
             </tr>
-            <tr>
+            <tr class="toogle">
                 <th>La temperatura convertida es:</th>
                 <td>
                     <span id="converted" class="output"></span>
