@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/ULL-ESIT-GRADOII-PL/conversor-de-temperatura-simple-ele-daniel/issues"
   },
-  "homepage": "https://github.com/ULL-ESIT-GRADOII-PL/conversor-de-temperatura-simple-ele-daniel#readme"
+  "homepage": "https://github.com/ULL-ESIT-GRADOII-PL/conversor-de-temperatura-simple-ele-daniel#readme",
+  "devDependencies": {
+    "chai": "^3.5.0"
+  }
 }

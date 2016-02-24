@@ -19,10 +19,17 @@ function calculate() {
 
     num = parseFloat(num);
     if (type == 'c' || type == 'C') {
-      result = (num * 9/5)+32 + exp + "F";
+      result = ((num * 9/5)+32);
+      exp = exp + "F";
     }
     else {
-      result = (num - 32)*5/9 + exp + "C";
+      result = ((num - 32)*5/9);
+      exp + exp + "C";
+    }
+    if (exp != ""){
+      result = result + exp;
+    } else {
+      result = result.toFixed(2);
     }
     converted.innerHTML = result;
   }
