@@ -8,9 +8,9 @@ function calculate() {
     var m = temp.match(regexp);
 
     if (m) {
-        var num = parseFloat(m[1]); // Int
-        var type = m[3][0];         // String
-        var exp;                    // String
+        var num = parseFloat(m[1].replace(',', '.')); // Int
+        var type = m[3][0];                           // String
+        var exp;                                      // String
         if (!m[2]) {
             exp = "";
         }else{
